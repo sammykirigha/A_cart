@@ -31,113 +31,30 @@
             <div class="dropdown">
                   <button onclick="myFunction()" class="dropbtn" >
                     <i class="fas fa-shopping-bag"></i>
-                    <span>6</span>
+                    <span id="cart-quantity-value">0</span>
                   </button>
-                 <div id="myDropdown" class="dropdown-content">
-                    <div class="dropdown-product">
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_5Y400_.jpg" />
-                        <div class="product-details">
-                         <p>Then lean startup</p>
-                         <div class="details">
-                             <div class="details-manipulate">
-                                <i class="fas fa-chevron-left"></i>
-                                <span>6</span>
-                                <i class="fas fa-chevron-right"></i>
-                             </div>
-                             <div class="details-info">
-                              <span>$300</span>
-                              <button>Del</button>
-                             </div>
-                         </div>
-                        </div>
-                    </div>
-                <div class="dropdown-product">
-                    <img src="https://m.media-amazon.com/images/I/519EahgX90L._AC_UL320_.jpg" />
-                    <div class="product-details">
-                        <p>Sony WH1000XM3 Noise Cancelling Headphones, Wireless Bluetooth</p>
-                        <div class="details">
-                            <div class="details-manipulate">
-                                <i class="fas fa-chevron-left"></i>
-                                <span>6</span>
-                                <i class="fas fa-chevron-right"></i>
+                <div id="myDropdown" class="dropdown-content">
+                    <div class="cart-list">
+                        <!-- <div class="dropdown-product">
+                            <img src="https://m.media-amazon.com/images/I/81z0S-eGXAL._AC_UY218_.jpg" />
+                            <div class="product-details">
+                                <p>Samsonite Xenon 3.0 Slim Backpack Laptop, Black, Medium...</p>
+                                <div class="details">
+                                    <div class="details-manipulate">
+                                        <i class="fas fa-chevron-left"></i>
+                                        <span>6</span>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                    <div class="details-info">
+                                        <span>$300</span>
+                                        <button>Del</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="details-info">
-                                <span>$300</span>
-                                <button>Del</button>
-                            </div>
-                        </div>
+                        </div> -->
                     </div>
+                  <button>GO TO CHECKOUT</button>
                 </div>
-                <div class="dropdown-product">
-                    <img src="https://m.media-amazon.com/images/I/81L9+4dTIgL._AC_UY218_.jpg" />
-                    <div class="product-details">
-                        <p>DualShock 4 Wireless Controller for PlayStation 4 - Magma Red</p>
-                        <div class="details">
-                            <div class="details-manipulate">
-                                <i class="fas fa-chevron-left"></i>
-                                <span>6</span>
-                                <i class="fas fa-chevron-right"></i>
-                            </div>
-                            <div class="details-info">
-                                <span>$300</span>
-                                <button>Del</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="dropdown-product">
-                    <img src="https://m.media-amazon.com/images/I/61t1BmzC5WL._AC_UY218_.jpg" />    
-                    <div class="product-details">
-                        <p>Sony X950H 49 Inch TV</p>
-                        <div class="details">
-                            <div class="details-manipulate">
-                                <i class="fas fa-chevron-left"></i>
-                                <span>6</span>
-                                <i class="fas fa-chevron-right"></i>
-                            </div>
-                            <div class="details-info">
-                                <span>$300</span>
-                                <button>Del</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="dropdown-product">
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg" />
-                    <div class="product-details">
-                       <p>Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor</p>
-                        <div class="details">
-                            <div class="details-manipulate">
-                                <i class="fas fa-chevron-left"></i>
-                                <span>6</span>
-                                <i class="fas fa-chevron-right"></i>
-                            </div>
-                            <div class="details-info">
-                                <span>$300</span>
-                                <button>Del</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="dropdown-product">
-                    <img src="https://m.media-amazon.com/images/I/81z0S-eGXAL._AC_UY218_.jpg" />
-                    <div class="product-details">
-                        <p>Samsonite Xenon 3.0 Slim Backpack Laptop, Black, Medium...</p>
-                        <div class="details">
-                            <div class="details-manipulate">
-                                <i class="fas fa-chevron-left"></i>
-                                <span>6</span>
-                                <i class="fas fa-chevron-right"></i>
-                            </div>
-                            <div class="details-info">
-                                <span>$300</span>
-                                <button>Del</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button>GO TO CHECKOUT</button>
-                 </div>
             </div>
         </nav>
     </header>
@@ -153,7 +70,7 @@
                 <!-- items description sections -->
              <div class="home_row">
                  <div id="product" class="product-content"></div>
-                 <div class="product">
+                 <!-- <div class="product">
                      <img 
                        src="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_5Y400_.jpg"
                       />
@@ -172,10 +89,10 @@
 
                           </div>
                       </div>
-                      <button>ADD TO CART</button>
-                 </div>
+                      <button class="add-to-cart">ADD TO CART</button>
+                 </div> -->
 
-                <div class="product">
+                <!-- <div class="product">
                     <img src="https://m.media-amazon.com/images/I/519EahgX90L._AC_UL320_.jpg" />
                     <div class="product_info">
                         <p>Sony WH1000XM3 Noise Cancelling Headphones, Wireless Bluetooth</p>
@@ -192,10 +109,10 @@
 
                         </div>
                     </div>
-                    <button>ADD TO CART</button>
-                </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div> -->
 
-                <div class="product">
+                <!-- <div class="product">
                     <img src="https://m.media-amazon.com/images/I/81L9+4dTIgL._AC_UY218_.jpg" />
                     <div class="product_info">
                         <p>DualShock 4 Wireless Controller for PlayStation 4 - Magma Red</p>
@@ -212,10 +129,10 @@
 
                         </div>
                     </div>
-                    <button>ADD TO CART</button>
-                </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div> -->
 
-                <div class="product">
+                <!-- <div class="product">
                      <img 
                        src="https://m.media-amazon.com/images/I/61t1BmzC5WL._AC_UY218_.jpg"
                       />
@@ -234,7 +151,7 @@
 
                           </div>
                       </div>
-                      <button>ADD TO CART</button>
+                      <button class="add-to-cart">ADD TO CART</button>
                  </div>
 
                 <div class="product">
@@ -254,7 +171,7 @@
 
                         </div>
                     </div>
-                    <button>ADD TO CART</button>
+                    <button class="add-to-cart">ADD TO CART</button>
                 </div>
 
                 <div class="product">
@@ -274,7 +191,7 @@
 
                         </div>
                     </div>
-                    <button>ADD TO CART</button>
+                    <button class="add-to-cart">ADD TO CART</button>
                 </div>
 
                 <div class="product">
@@ -294,10 +211,10 @@
 
                         </div>
                     </div>
-                    <button>ADD TO CART</button>
-                </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div> -->
 
-                <div class="product">
+                <!-- <div class="product">
                     <img src="https://m.media-amazon.com/images/I/81NL4nYr15L._AC_UY218_.jpg" />
                     <div class="product_info">
                         <p>Acer XFA240 bmjdpr 24 Gaming G-SYNC Compatible Monitor 1920 x 1080, 144hz Refresh Rate, 1ms Response Time with Height,
@@ -315,10 +232,10 @@
 
                         </div>
                     </div>
-                    <button>ADD TO CART</button>
-                </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div> -->
 
-                <div class="product">
+                <!-- <div class="product">
                     <img src="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg" />
                     <div class="product_info">
                         <p>Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor</p>
@@ -335,10 +252,10 @@
 
                         </div>
                     </div>
-                    <button>ADD TO CART</button>
-                </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div> -->
 
-                <div class="product">
+                <!-- <div class="product">
                     <img src="https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2s" />
                     <div class="product_info">
                         <p>Oster Toaster Oven | Digital Convection Oven, Large 6-Slice Capacity, Black/Polished Stainless</p>
@@ -355,7 +272,7 @@
 
                         </div>
                     </div>
-                    <button>ADD TO CART</button>
+                    <button class="add-to-cart">ADD TO CART</button>
                 </div>
 
                 <div class="product">
@@ -375,7 +292,7 @@
 
                         </div>
                     </div>
-                    <button>ADD TO CART</button>
+                    <button class="add-to-cart">ADD TO CART</button>
                 </div>
 
                 <div class="product">
@@ -394,8 +311,8 @@
                             <span class="fa fa-star checked"></span>
                         </div>
                     </div>
-                    <button>ADD TO CART</button>
-                </div>
+                    <button onclick="addToCart(4)" class="add-to-cart">ADD TO CART</button>
+                </div> -->
 
              </div>
         </div>
