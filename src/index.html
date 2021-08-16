@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href='./css/styles.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -13,10 +14,10 @@
         <nav>
             <a href="#" class="nav_header">
                 <img 
-                    class="header_log"
+                    id="header_log"
                     src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
                  />
-                <i class="fas fa-shopping-bag"></i>
+                <i class="fas fa-cart-plus"></i>
              </a >
              <div class="search">
                  <input
@@ -26,25 +27,132 @@
                  />
                 <i class="fas fa-search"></i>
             </div>
-            <div class="navs">
-                <ul class="icons">
-                    <a href="#">
-                        <li>Items</li>
-                    </a>
-                    <a href="#">
-                        <i class="fas fa-cart-plus"></i>
-                    </a>
-                </ul>
+            <!-- dropdown -->
+            <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn" >
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>6</span>
+                  </button>
+                 <div id="myDropdown" class="dropdown-content">
+                    <div class="dropdown-product">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_5Y400_.jpg" />
+                        <div class="product-details">
+                         <p>Then lean startup</p>
+                         <div class="details">
+                             <div class="details-manipulate">
+                                <i class="fas fa-chevron-left"></i>
+                                <span>6</span>
+                                <i class="fas fa-chevron-right"></i>
+                             </div>
+                             <div class="details-info">
+                              <span>$300</span>
+                              <button>Del</button>
+                             </div>
+                         </div>
+                        </div>
+                    </div>
+                <div class="dropdown-product">
+                    <img src="https://m.media-amazon.com/images/I/519EahgX90L._AC_UL320_.jpg" />
+                    <div class="product-details">
+                        <p>Sony WH1000XM3 Noise Cancelling Headphones, Wireless Bluetooth</p>
+                        <div class="details">
+                            <div class="details-manipulate">
+                                <i class="fas fa-chevron-left"></i>
+                                <span>6</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="details-info">
+                                <span>$300</span>
+                                <button>Del</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-product">
+                    <img src="https://m.media-amazon.com/images/I/81L9+4dTIgL._AC_UY218_.jpg" />
+                    <div class="product-details">
+                        <p>DualShock 4 Wireless Controller for PlayStation 4 - Magma Red</p>
+                        <div class="details">
+                            <div class="details-manipulate">
+                                <i class="fas fa-chevron-left"></i>
+                                <span>6</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="details-info">
+                                <span>$300</span>
+                                <button>Del</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-product">
+                    <img src="https://m.media-amazon.com/images/I/61t1BmzC5WL._AC_UY218_.jpg" />    
+                    <div class="product-details">
+                        <p>Sony X950H 49 Inch TV</p>
+                        <div class="details">
+                            <div class="details-manipulate">
+                                <i class="fas fa-chevron-left"></i>
+                                <span>6</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="details-info">
+                                <span>$300</span>
+                                <button>Del</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-product">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg" />
+                    <div class="product-details">
+                       <p>Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor</p>
+                        <div class="details">
+                            <div class="details-manipulate">
+                                <i class="fas fa-chevron-left"></i>
+                                <span>6</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="details-info">
+                                <span>$300</span>
+                                <button>Del</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-product">
+                    <img src="https://m.media-amazon.com/images/I/81z0S-eGXAL._AC_UY218_.jpg" />
+                    <div class="product-details">
+                        <p>Samsonite Xenon 3.0 Slim Backpack Laptop, Black, Medium...</p>
+                        <div class="details">
+                            <div class="details-manipulate">
+                                <i class="fas fa-chevron-left"></i>
+                                <span>6</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="details-info">
+                                <span>$300</span>
+                                <button>Del</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button>GO TO CHECKOUT</button>
+                 </div>
             </div>
         </nav>
     </header>
+
+    <!-- home page -->
     <div class="home">
         <div class="container">
                 <img
                     class="home__image"
                     src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428694220_.jp" 
                 />
+
+                <!-- items description sections -->
              <div class="home_row">
+                 <div id="product" class="product-content"></div>
                  <div class="product">
                      <img 
                        src="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_5Y400_.jpg"
@@ -55,7 +163,14 @@
                               <strong>$</strong>
                               <strong>500</strong>
                           </p>
-                          <div id="rating">5</div>
+                          <div id="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+
+                          </div>
                       </div>
                       <button>ADD TO CART</button>
                  </div>
@@ -68,7 +183,14 @@
                             <strong>$</strong>
                             <strong>384.89</strong>
                         </p>
-                        <div id="rating">4</div>
+                        <div id="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star  checked" ></span>
+                            <span class="fa fa-star"></span>
+
+                        </div>
                     </div>
                     <button>ADD TO CART</button>
                 </div>
@@ -81,7 +203,14 @@
                             <strong>$</strong>
                             <strong>64.99</strong>
                         </p>
-                        <div id="rating">4</div>
+                        <div id="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+
+                        </div>
                     </div>
                     <button>ADD TO CART</button>
                 </div>
@@ -96,7 +225,14 @@
                               <strong>$</strong>
                               <strong>867.99</strong>
                           </p>
-                          <div id="rating">5</div>
+                          <div id="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+
+                          </div>
                       </div>
                       <button>ADD TO CART</button>
                  </div>
@@ -109,7 +245,14 @@
                             <strong>$</strong>
                             <strong>199.99</strong>
                         </p>
-                        <div id="rating">5</div>
+                        <div id="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+
+                        </div>
                     </div>
                     <button>ADD TO CART</button>
                 </div>
@@ -122,7 +265,14 @@
                             <strong>$</strong>
                             <strong>99.99</strong>
                         </p>
-                        <div id="rating">5</div>
+                        <div id="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+
+                        </div>
                     </div>
                     <button>ADD TO CART</button>
                 </div>
@@ -135,7 +285,14 @@
                             <strong>$</strong>
                             <strong>67.99</strong>
                         </p>
-                        <div id="rating">5</div>
+                        <div id="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+
+                        </div>
                     </div>
                     <button>ADD TO CART</button>
                 </div>
@@ -149,7 +306,14 @@
                             <strong>$</strong>
                             <strong>867.99</strong>
                         </p>
-                        <div id="rating">5</div>
+                        <div id="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+
+                        </div>
                     </div>
                     <button>ADD TO CART</button>
                 </div>
@@ -162,7 +326,14 @@
                             <strong>$</strong>
                             <strong>87.99</strong>
                         </p>
-                        <div id="rating">5</div>
+                        <div id="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+
+                        </div>
                     </div>
                     <button>ADD TO CART</button>
                 </div>
@@ -175,7 +346,14 @@
                             <strong>$</strong>
                             <strong>95.99</strong>
                         </p>
-                        <div id="rating">2</div>
+                        <div id="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+
+                        </div>
                     </div>
                     <button>ADD TO CART</button>
                 </div>
@@ -188,7 +366,14 @@
                             <strong>$</strong>
                             <strong>87.99</strong>
                         </p>
-                        <div id="rating">4</div>
+                        <div id="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+
+                        </div>
                     </div>
                     <button>ADD TO CART</button>
                 </div>
@@ -201,14 +386,62 @@
                             <strong>$</strong>
                             <strong>3,461.99</strong>
                         </p>
-                        <div id="rating">3</div>
+                        <div id="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
                     </div>
                     <button>ADD TO CART</button>
                 </div>
+
              </div>
         </div>
     </div>
 
-<script src="./js/index.js"></script>
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer__up">
+            <div class="footer__image">
+                <img 
+                   class="footer__logo"
+                   src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+                 />
+                 <div class="footer__icon">
+                    <i class="fas fa-cart-plus"></i>
+                 </div>
+            </div>
+        </div>
+        <!-- footer new users -->
+        <div class="footer__new">
+            <h2>NEW TO AMAZON</h2>
+            <P>Subcribe to our newsletter to get updates on our latest offers!</P>
+            <div class="footer__subscribe">
+                <input type="text" placeholder="Enter email Address" />
+                <button>Male</button>
+                <button>Female</button>
+            </div>
+        </div>
+        <div class="footer__downloadApp">
+            <div class="footer_download">
+                <img 
+                   class="footer__downloadIcon"
+                   src="https://www.freeiconspng.com/uploads/shopping-cart-icon-2.png"
+                />
+                <div class="footer__downloadSentiments">
+                    <h2>DOWNLOAD AMAZON FREE APP</h2>
+                    <p>Get access to exclusive offers!</p>
+                </div>
+            </div>
+            <div class="footer__appLinks">
+                <!-- <img className="footer__links" src="https://miro.medium.com/max/8982/1*V9-OPWpauGEi-JMp05RC_A.png" /> -->
+                <!-- <img className="footer__links" src="https://cdn-images-1.medium.com/max/1600/1*EiZrcN_DIapbZaxutxbZRA.png" /> -->
+            </div>
+        </div>
+        </div>
+<script src="./js/dropdown.js" >
+</script>
 </body>
 </html>
